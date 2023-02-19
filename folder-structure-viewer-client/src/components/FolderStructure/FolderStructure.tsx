@@ -1,19 +1,27 @@
 import React, { useState } from 'react';
 import './FolderStructure.css';
-import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
+import FolderCreateModal from '../FolderCreateModal/FolderCreateModal';
+import FolderDeleteModal from '../FolderDeleteModal/FolderDeleteModal';
 
-type FolderInfoType = {
+export type FolderInfoType = {
     _id: string;
     folderName: string;
 }
 
 const FolderStructure = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [isDelete, setIsDelete] = useState<boolean>(false);
+    const [folderInfo, setFolderInfo] = useState<FolderInfoType | null>(null);
 
-    const toggleModal = () => {
+    const createToggleModal = () => {
         setIsOpen(!isOpen);
+    };
+
+    const deleteToggleModal = (folder: FolderInfoType) => {
+        setIsDelete(!isDelete);
+        setFolderInfo(folder);
     };
 
     const { data: folders = [], refetch } = useQuery({
@@ -25,60 +33,38 @@ const FolderStructure = () => {
         }
     });
 
-    const handleSubmit = (event: React.SyntheticEvent) => {
-        event.preventDefault();
-
-        const target = event.target as typeof event.target & {
-            folderName: { value: string };
-        };
-
-        const folderName = target.folderName.value;
-
-        axios.post('http://localhost:5000/folders', { folderName })
-            .then((response) => {
-                console.log(response.data);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-
-
-        setIsOpen(!isOpen);
-
-    }
-
     refetch();
 
     return (
-        <div>
-            <h1>This is folder Structure file</h1>
+        <div className="container">
             <div>
                 <div>
                     <span>Root</span>
-                    <span onClick={toggleModal} className="addFolder">+ New</span>
+                    <span onClick={createToggleModal} className="addFolder">+ New</span>
                 </div>
-                {isOpen && (
-                    <div className="modal-container">
-                        <div className="modal customize-modal">
-                            <div className="modal-content">
-                                <form onSubmit={handleSubmit}>
-                                    <input type="text" name='folderName' />
-                                    <button>
-                                        Create
-                                    </button>
-                                </form>
-                                <button onClick={toggleModal}>Close Modal</button>
-                            </div>
-                        </div>
-                    </div>
-                )}
+                {isOpen && <FolderCreateModal
+                    isOpen={isOpen}
+                    setIsOpen={setIsOpen}
+                    createToggleModal={createToggleModal}
+                ></FolderCreateModal>}
             </div>
 
             {
                 folders.map(folder => <div className="created-folder">
                     <span>{folder.folderName}</span>
-                    <span onClick={toggleModal} className="addFolder">+ New</span>
+                    <div>
+                        <span onClick={() => deleteToggleModal(folder)} className="addFolder">Delete</span>
+                        <span onClick={createToggleModal} className="addFolder">+ New</span>
+                    </div>
                 </div>)
+            }
+
+            {
+                isDelete && <FolderDeleteModal
+                    folderInfo={folderInfo}
+                    isDelete={isDelete}
+                    setIsDelete={setIsDelete}
+                ></FolderDeleteModal>
             }
 
         </div>
