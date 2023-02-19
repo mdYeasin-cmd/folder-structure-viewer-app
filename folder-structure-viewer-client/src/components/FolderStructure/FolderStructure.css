@@ -1,0 +1,38 @@
+.displayName {
+    color: red;
+}
+
+.displayName:hover {
+    color: green !important;
+}
+
+.addFolder {
+    margin-left: 30px;
+    border: 2px solid red;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.customize-modal {
+    position: absolute;
+    background-color: rebeccapurple;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.created-folder {
+    margin: 0 0 0 50px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: red; */
+}
