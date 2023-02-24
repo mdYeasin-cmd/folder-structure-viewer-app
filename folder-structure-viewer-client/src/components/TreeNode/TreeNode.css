@@ -1,0 +1,11 @@
+.d-tree-toggler{
+    display: inline;
+}
+
+.tree-container {
+    display: flex;
+}
+
+.d-tree-toggler.active {
+    transform: rotate(45deg);
+}

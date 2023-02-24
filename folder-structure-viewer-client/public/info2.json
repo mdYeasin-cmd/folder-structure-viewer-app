@@ -1,0 +1,353 @@
+{
+    "name": "All Cryptos",
+    "children": [
+      {
+        "_id": 65,
+        "name": "new file",
+        "checked": 0
+      },
+      {
+        "_id": 64,
+        "name": "new file",
+        "checked": 0
+      },
+      {
+        "_id": 63,
+        "name": "new file",
+        "checked": 0
+      },
+      {
+        "_id": 62,
+        "name": "new file",
+        "checked": 0
+      },
+      {
+        "_id": 61,
+        "name": "new file",
+        "checked": 0
+      },
+      {
+        "name": "Bitcoin",
+        "_id": 1,
+        "checked": 0
+      },
+      {
+        "name": "Etherium",
+        "_id": 2,
+        "checked": 0
+      },
+      {
+        "name": "Polkadot",
+        "_id": 3,
+        "checked": 0
+      },
+      {
+        "name": "POW",
+        "children": [
+          {
+            "_id": 60,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 59,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 58,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 57,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 56,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 55,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 54,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 53,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 52,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 51,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 50,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 49,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 48,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 47,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 46,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 45,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 44,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 43,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 42,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 41,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 40,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 39,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 38,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 37,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 31,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 30,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 29,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 28,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 27,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 26,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 25,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 24,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 23,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 22,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "_id": 21,
+            "name": "new file",
+            "checked": 0
+          },
+          {
+            "name": "Bitcoin",
+            "_id": 5,
+            "checked": 0
+          },
+          {
+            "name": "Litecoin",
+            "_id": 6,
+            "checked": 0
+          },
+          {
+            "name": "Bitcoin Cash",
+            "_id": 7,
+            "checked": 0
+          },
+          {
+            "_id": 32,
+            "name": "new folder",
+            "checked": 0,
+            "children": []
+          },
+          {
+            "_id": 33,
+            "name": "new folder",
+            "checked": 0,
+            "children": []
+          },
+          {
+            "_id": 34,
+            "name": "new folder",
+            "checked": 0,
+            "children": []
+          },
+          {
+            "_id": 35,
+            "name": "new folder",
+            "checked": 0,
+            "children": []
+          },
+          {
+            "_id": 36,
+            "name": "new folder",
+            "checked": 0,
+            "children": []
+          }
+        ],
+        "_id": 4,
+        "checked": 0,
+        "isOpen": true
+      },
+      {
+        "name": "Public Chains",
+        "children": [
+          {
+            "name": "Ripple",
+            "_id": 9,
+            "checked": 0
+          },
+          {
+            "name": "Chainlink",
+            "_id": 10,
+            "checked": 0
+          },
+          {
+            "name": "POW",
+            "children": [
+              {
+                "name": "Bitcoin",
+                "_id": 12,
+                "checked": 0
+              },
+              {
+                "name": "Litecoin",
+                "_id": 13,
+                "checked": 0
+              },
+              {
+                "name": "Bitcoin Cash",
+                "_id": 14,
+                "checked": 0
+              }
+            ],
+            "_id": 11,
+            "checked": 0,
+            "isOpen": true
+          },
+          {
+            "name": "POS",
+            "children": [
+              {
+                "name": "Etherium",
+                "_id": 16,
+                "checked": 0
+              },
+              {
+                "name": "EOS",
+                "_id": 17,
+                "checked": 0
+              },
+              {
+                "name": "Crosschain",
+                "children": [
+                  {
+                    "name": "Polkadot",
+                    "_id": 19,
+                    "checked": 0
+                  },
+                  {
+                    "name": "Cosmos",
+                    "_id": 20,
+                    "checked": 0
+                  }
+                ],
+                "_id": 18,
+                "checked": 0,
+                "isOpen": true
+              }
+            ],
+            "_id": 15,
+            "checked": 0,
+            "isOpen": true
+          }
+        ],
+        "_id": 8,
+        "checked": 0,
+        "isOpen": true
+      }
+    ],
+    "_id": 0,
+    "checked": 0,
+    "isOpen": true
+  }

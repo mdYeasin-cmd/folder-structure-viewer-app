@@ -1,6 +1,7 @@
 import React from 'react';
 import { FolderInfoType } from '../FolderStructure/FolderStructure';
 import './FolderDeleteModal.css';
+import axios from "axios";
 
 type FolderDeleteModalProps = {
     folderInfo: FolderInfoType | null;
@@ -12,7 +13,9 @@ const FolderDeleteModal = ({ folderInfo, isDelete, setIsDelete }: FolderDeleteMo
     
     const handleDelete = () => {
 
-        
+        axios.delete(`http://localhost:5000/folders/${folderInfo?._id}`)
+            .then(() => {})
+            .catch(error => console.log(error));
 
         setIsDelete(!isDelete);
     }

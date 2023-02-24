@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import './FolderStructure.css';
-import { useQuery } from '@tanstack/react-query';
-import FolderCreateModal from '../FolderCreateModal/FolderCreateModal';
-import FolderDeleteModal from '../FolderDeleteModal/FolderDeleteModal';
 
 export type FolderInfoType = {
     _id: string;
@@ -14,6 +11,7 @@ const FolderStructure = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isDelete, setIsDelete] = useState<boolean>(false);
     const [folderInfo, setFolderInfo] = useState<FolderInfoType | null>(null);
+    const [toggle, setToggle] = useState<boolean>(false);
 
     const createToggleModal = () => {
         setIsOpen(!isOpen);
@@ -24,19 +22,36 @@ const FolderStructure = () => {
         setFolderInfo(folder);
     };
 
-    const { data: folders = [], refetch } = useQuery({
-        queryKey: ['folders'],
-        queryFn: async (): Promise<FolderInfoType[]> => {
-            const res = await fetch(`http://localhost:5000/folders`);
-            const data = await res.json();
-            return data;
-        }
-    });
-
-    refetch();
-
     return (
         <div className="container">
+
+            
+
+            {/* <div>
+                <ul id="myUL">
+                    <li><span className="caret">Beverages</span>
+                        <ul className="nested">
+                            <li>Water</li>
+                            <li>Coffee</li>
+                            <li><span className="caret">Tea</span>
+                                <ul className="nested">
+                                    <li>Black Tea</li>
+                                    <li>White Tea</li>
+                                    <li><span className="caret">Green Tea</span>
+                                        <ul className="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
             <div>
                 <div>
                     <span>Root</span>
@@ -65,7 +80,7 @@ const FolderStructure = () => {
                     isDelete={isDelete}
                     setIsDelete={setIsDelete}
                 ></FolderDeleteModal>
-            }
+            } */}
 
         </div>
     );

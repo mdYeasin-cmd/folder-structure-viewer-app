@@ -1,0 +1,11 @@
+.modal-container {
+    position: absolute;
+    background-color: rebeccapurple;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-container {
+    border: 2px solid red;
+}

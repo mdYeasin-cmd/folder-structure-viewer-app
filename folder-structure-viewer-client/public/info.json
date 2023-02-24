@@ -1,0 +1,36 @@
+[
+    {
+        "key": "0",
+        "label": "Documents",
+        "icon": "fa fa-folder",
+        "title": "Documents Folder",
+        "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+        "children": [
+            {
+                "key": "0-0",
+                "label": "Document 1-1",
+                "icon": "fa fa-folder",
+                "title": "Documents Folder",
+                "id": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+                "children": [
+                    {
+                        "key": "1",
+                        "label": "Desktop",
+                        "icon": "fa fa-desktop",
+                        "title": "Desktop Folder",
+                        "id": "23e584b7-8dc9-4e6b-923d-109a5746cd92",
+                        "children": []
+                    },
+                    {
+                        "key": "2",
+                        "label": "Downloads",
+                        "icon": "fa fa-download",
+                        "title": "Downloads Folder",
+                        "id": "51534373-cacb-4df2-a85b-f3448eb6dfd5",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+]
